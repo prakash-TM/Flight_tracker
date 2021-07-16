@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.city {
+  background-color: #ecde5a;
+  color: black;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 15px;
+  font-family:courie;
+}
+.city1 {
+background-color:#6495ED;
+border: 2px solid black;
+  color: black;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  font-family:verdana;
+}
+.city2 {
+  color: black;
+  text-align: center;
+  
+
+}
+
+.city3 {
+  color: black;
+  text-align: right;
+  font-family:courie;
+  
+  
+}
+.city4 {
+  color:black;
+  text-align: left;
+  font-family:arial;
+ 
+}
+
+a:link{
+  background-color: #d3d4da;
+ 
+  padding: 5px 15px;
+  text-align: right;
+  text-decoration: none;
+  border:2px solid gray;
+ 
+}
+
+a:hover {
+  background-color: lime;
+}
+
+header {
+  background-color: rgb(160, 70, 28);
+  padding: 3px;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 20%;
+  height: 1300px; 
+  background: #70f064;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 30px;
+  width: 80%;
+  background-color: #faf9f8;
+  height: 1300px; 
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2 style="font-family:verdana;">Flight Search Engine</h2>
+
+
+<header>
+  <h1 style="font-family:verdana;">Cities</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <div class="city4">
+            <form action="/action_page.php">
+        <fieldset>
+          <legend>One Way</legend>
+          <input type="text" placeholder="Enter Orgin City" id="fname" name="fname"  required ><br><br>
+          
+          <input type="text" id="lname" name="lname" placeholder="Enter Destination City" required><br><br>
+          
+           <label for="birthday">Select Departure Date</label><br>
+          <input type="date" required><br><br>
+          
+           <label for="birthday">Select Return Date</label><br>
+          <input type="date" required><br><br>
+          
+          <label for="birthday">Passengers</label><br>
+           <input type="number" placeholder="<=6" id="quantity" name="quantity" min="1" max="6" required><br><br>
+            
+          <input type="submit" value="Search">	
+        </fieldset>
+      </form>
+      
+      <br>
+      <br>
+      
+       <form action="/action_page.php">
+        <fieldset>
+          <legend>Return</legend>
+          <input type="text" placeholder="Enter Orgin City" id="fname" name="fname"  required ><br><br>
+          
+          <input type="text" id="lname" name="lname" placeholder="Enter Destination City" required><br><br>
+          
+           <label for="birthday">Select Departure Date</label><br>
+          <input type="date" required><br><br>
+          
+           <label for="birthday">Select Return Date</label><br>
+          <input type="date" required><br><br>
+          
+          <label for="birthday">Passengers</label><br>
+           <input type="number" placeholder="<=6" id="quantity" name="quantity" min="1" max="6" required><br><br>
+            
+          <input type="submit" value="Search">	
+        </fieldset>
+      </form>
+      <br>
+
+     <form action="/action_page.php"
+      oninput="x.value=parseInt(a.value)">
+      <fieldset>
+          <legend>Return</legend>
+         0
+        <input type="range" id="a" name="a" value="50">
+        100 
+        
+        <br>
+        <div class="city2">
+        <output name="x" for="a b"></output>
+        <br>
+        <br>
+        <input type="submit">
+        </div>
+         
+        </fieldset>
+      </form>
+        
+          
+        </div>
+    </ul>
+  </nav>
+  
+  <article> 
+    <div class="city1">
+    <h3>Pune > Delhi > Pune</h3>
+    </div> 
+    
+    <div class="city">
+    <h3>  Rs. 9,500.00</h3>
+    <p>Flight Name : AI-202
+    <div>
+    <table style="width:100% ; text-align:left;">
+  <tr>
+    <th>PNQ > DEL</th>
+    <th></th>
+    <th><div class="city3">DEL > PNQ</div></th> 
+  </tr>
+  <tr>
+    <td>Depart : 10.00 AM</td>
+    <td></td>
+    <td><div class="city3">Depart : 08.00 PM</div></td>
+    
+  </tr>
+   <tr>
+    <td>Arive : 12.00 PM</td>
+    <td></td>
+    <td><div class="city3">Arrive : 11.00 PM</div></td>
+    <td>
+  </tr>
+  <tr>
+  <td></td>
+  <td>
+    <div class="city2">
+
+<img src="flight1.jpg" alt="Air India" style="border:5px solid black;width:200px;height:90px;">
+<p>
+<a href="file:///C:/Users/Dell/VS%20programs/AIFlight%20Details.html"><b>Book this flight</b></a>
+<!--<button onclick="document.location='file:///C:/Users/Dell/VS%20programs/Flight%20Details.html'">Book this flight</button>-->
+</p>
+</div> </td></tr>
+
+
+  </table>
+    </div>
+    </p>
+    </div> 
+   
+    
+    <div class="city">
+        <h3>Rs. 6,800.00</h3>
+        <p>Flight Name : BA-502
+        <div>
+        <table style="width:100% ; text-align:left;">
+      <tr>
+        <th>PNQ > DEL</th>
+        <th></th>
+        <th><div class="city3">DEL > PNQ</div></th> 
+      </tr>
+      <tr>
+        <td>Depart : 05.00 AM</td>
+        <td></td>
+        <td><div class="city3">Depart : 09.00 PM</div></td>
+        
+      </tr>
+       <tr>
+        <td>Arive : 01.00 PM</td>
+        <td></td>
+        <td><div class="city3">Arrive : 11.00 PM</div></td>
+        <td>
+      </tr>
+      <tr>
+      <td></td>
+      <td><div class="city2">
+    
+    <img src="flight02.jpg" alt="British Airways" style="border:5px solid black;width:200px;height:90px;">
+    <p>
+    <a href="file:///C:/Users/Dell/VS%20programs/BAFlight%20Details.html"><b>Book this flight</b></a>
+    <!--<button onclick="document.location='file:///C:/Users/Dell/VS%20programs/Flight%20Details.html'">Book this flight</button>-->
+    </p>
+    </div> </td></tr>
+    
+    
+      </table>
+        </div>
+        </p>
+        </div> 
+        <div class="city">
+            <h3>Rs. 5,750.00</h3>
+            <p>Flight Name : AA-454
+            <div>
+            <table style="width:100% ; text-align:left;">
+          <tr>
+            <th>PNQ > DEL</th>
+            <th></th>
+            <th><div class="city3">DEL > PNQ</div></th> 
+          </tr>
+          <tr>
+            <td>Depart : 09.00 AM</td>
+            <td></td>
+            <td><div class="city3">Depart : 07.00 PM</div></td>
+            
+          </tr>
+           <tr>
+            <td>Arive : 11.00 PM</td>
+            <td></td>
+            <td><div class="city3">Arrive : 10.00 PM</div></td>
+            <td>
+          </tr>
+          <tr>
+          <td></td>
+          <td><div class="city2">
+        
+        <img src="flight03.jpg" alt="Air Asia" style="border:5px solid black;width:200px;height:90px;">
+        <p><!--<button onclick="document.location='file:///C:/Users/Dell/VS%20programs/Flight%20Details.html'">Book this flight</button>-->
+        <a href="file:///C:/Users/Dell/VS%20programs/AAFlight%20Details.html"><b>Book this flight</b></a>
+        </p>
+      </div> </td></tr>
+        
+        
+    </table>
+   </div>
+  </p>
+</div> 
+     
+    
+    
+</body>
+</html>
